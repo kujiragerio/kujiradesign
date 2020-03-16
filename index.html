@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,inital-scale=1">
+<title>Kukka</title>
+<link href="css/style.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/slick-theme.css"/>
+<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+<!--フェードインscript-->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="js/jquery.fademover.js"></script>
+<script>
+var $j = jQuery.noConflict(true);//jQueryに別名を与える	
+$j(function(){
+	$j('#wrap').fadeMover({
+		'effectType': 1,
+		'inSpeed': 2400,
+		'outSpeed':800,
+		'inDelay' : '0',
+		'outDelay' : '0',
+		'nofadeOut' : 'nonmover'
+	});
+});
+</script>
+<!--'effectType': 1,フェードイン＆フェードアウト
+		'inSpeed': 2400,フェードインスピードをミリ秒で
+		'outSpeed':2400,フェードアウトスピードをミリ秒で
+		'inDelay' : '0',フェードイン遅延スピードをミリ秒で指定します。複数要素がある場合、順番にフェードインしていきます。「0」を指定すると遅延なくフェードインします。
+		'outDelay' : '0',フェードアウト遅延スピードをミリ秒で指定します。複数要素がある場合、順番にフェードアウトしていきます。「0」を指定すると遅延なくフェードアウトします。
+		'nofadeOut' : 'nonmover' class="nonmover">とclass指定した<a>タグはフェードアウト動作禁止になります。-->
+<!--フェードインscriptここまで-->
+
+<link href="favicon.ico" rel="shortcut icon">
+</head>
+<body id="index">
+  <!--	header始まり-->
+  <header>
+    <div class="logo">
+      <a href="index.html"><img src="images/small-Kukka-logo.png" alt="Kukka Logo"></a>
+    </div>
+    <nav class="global-nav">
+      <ul>
+				<li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+				<li>
+					<div class="accordion">
+						<div class="accordion-btn"><a>Category</a></div>
+					  <ul>
+					    <li><a href="category-kids.html">Kids</a></li>
+					    <li><a href="category-wedding.html">Wedding</a></li>
+					    <li><a href="category-accesories.html">小物</a></li>
+					    <li><a href="category-order.html">オーダー</a></li>
+				  	</ul>
+					</div>
+				</li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!--	header終わり-->
+  <!--  wrap始まり-->
+  <div id="wrap">
+    <div class="content">
+			<div class="slider">
+        <div><img src="images/home-picture.jpg" alt="kukkaホーム画像"></div>
+        <div><img src="images/home.jpg" alt="kukkaホーム画像"></div>
+			</div>
+    </div>
+  </div>
+	<!--  wrap終わり-->
+  <!--  footer始まり-->
+  <footer>
+    <ul>©Kukka.</ul>
+		<ul>Mail:kukka2019@outlook.jp</ul>
+		<ul><a href="#"><img src="images/FACEBOOK.png"></a>
+		<a href="#"><img src="images/instagram.png"></a></ul>
+  </footer>
+<!--	footer終わり-->
+	
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function(){
+     $('.slider').slick({
+  autoplay: true, //自動再生
+  dots: false, //ドットのナビゲーションを表示
+  infinite: true, //スライドのループ有効化
+  speed: 6000, //切り替えのスピード（小さくすると速くなる）
+  fade: true, //フェードの有効化
+
+});
+});
+  </script>
+	
+	<script src="js/script.js"></script>
+
+</body>
+</html>
